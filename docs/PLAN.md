@@ -112,7 +112,7 @@
 Android Auto ist ein **proprietäres, verschlüsseltes Google-Protokoll**. Es gibt **keine** offizielle Möglichkeit für eine normale App, ein Android-Auto-Empfänger zu sein. Alle Lösungen sind Reverse Engineering oder Umwege. Deshalb: Projektion als **Adapter-Schnittstelle** (`ProjectionAdapter`), damit wir Wege tauschen können, wenn Google etwas kaputtmacht.
 
 ### Weg A – Open Headunit einbinden (Standard-Empfehlung)
-- **Was:** [Open Headunit](https://github.com/andreknieriem/headunit-revived) (früher „Headunit Revived“), Open Source unter **AGPL-3.0**, macht ein Android-Tablet zum Android-Auto-Empfänger. Kostenlos im Play Store.
+- **Was:** [Open Headunit](https://github.com/andreknieriem/open-headunit) (früher „Headunit Revived“), Open Source unter **AGPL-3.0**, macht ein Android-Tablet zum Android-Auto-Empfänger. Kostenlos im Play Store.
 - **Verbindung:** USB (Handy per Kabel/OTG), WLAN über den „Headunit Server“ (Android-Auto-Entwickleroptionen, Port 5277), Wi-Fi Direct, Hotspot, Helper-App.
 - **Integration:** Die App lässt sich per Intent steuern: `headunit://connect?ip=<IP>` und `headunit://exit`. Unser Launcher erkennt, ob sie installiert ist, zeigt eine „Android Auto“-Kachel und kehrt nach `exit` zurück.
 - **Vorteile:** Echte Android-Auto-Oberfläche (Maps, Spotify, WhatsApp – alles, was AA kann), kein eigener Protokoll-Code, aktiv gepflegt.
@@ -420,7 +420,7 @@ Antworten werden hier nachgetragen. In Klammern steht mein Vorschlag, falls du k
 
 ## 14. Quellen
 
-- Open Headunit (ehem. Headunit Revived), AGPL-3.0, Intents & AA-17.4-Hinweis: https://github.com/andreknieriem/headunit-revived
+- Open Headunit (ehem. Headunit Revived), AGPL-3.0, Intents & AA-17.4-Hinweis: https://github.com/andreknieriem/open-headunit
 - node-CarPlay (MIT), Carlinkit-Dongle-Protokoll: https://github.com/rhysmorgan134/node-CarPlay
 - scrcpy (Apache-2.0), virtuelle Displays seit 3.0: https://github.com/Genymobile/scrcpy
 - Android 17: Ausrichtung/Größe auf großen Bildschirmen: https://developer.android.com/blog/posts/prepare-your-app-for-the-resizability-and-orientation-changes-in-android-17
